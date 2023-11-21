@@ -1,0 +1,169 @@
+/* BUG退散 */
+.BUG {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 清除浮动 */
+.clearfix::before,.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* 页面平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../image/5.jpg);
+    background-size: 100%;
+    /* 背景图不重复 */
+    background-repeat: no-repeat;
+    /* 背景不随页面滚动 */
+    background-attachment: fixed;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.7;
+    z-index: 999;
+}
+
+.nav .img {
+    margin:5px 0 0 10px;
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+.nav .img img{
+    width: 50px;
+    height: 50px;
+}
+
+.nav span {
+    float: left;
+    line-height: 60px;
+    font-size: 1.8em;
+    color:aliceblue;
+}
+
+.nav ul {
+    float: right;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    padding: 0 20px;
+    line-height: 60px;
+    color: #050505;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.title {
+    padding-top: 60px;
+    width: 100%;
+    height: 600px;
+}
+
+.title .font h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 250px;
+    color: aquamarine;
+    opacity: 0.7;
+}
+
+.title .font h2 {
+    text-align: center;
+    color: aquamarine;
+    font-size: 2.5em;
+    opacity: 0.7;
+}
+
+.title .dowm {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.title .dowm img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.huanchon {
+    width: 100%;
+    height: 200px;
+}
+
+
+
+
+/* 相册部分 */
+.photo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.photo .lunbo {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: pink; */
+    width: 1000px;
+    height: 500px;
+}
+
+.music {
+    width: 100vw;
+    height: 100vh;
+}
+
+.movie {
+    width: 100vw;
+    height: 100vh;
+}
+
+.game {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.game h1 {
+    line-height: 100vh;
+    color: aquamarine;
+    font-size: 80px;
+    opacity: 0.8;
+}
